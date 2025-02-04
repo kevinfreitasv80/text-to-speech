@@ -24,7 +24,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 70%;
 }
 h1,
 button {
@@ -79,6 +79,8 @@ article {
   margin-top: 1em;
   width: 100%;
   padding: 1em;
+  display: flex;
+  justify-content: space-around;
 }
 select {
   background: var(--blue);
@@ -96,6 +98,31 @@ button {
   color: var(--darkBlue);
   border-radius: 2em;
   cursor: pointer;
+}
+
+@media screen and (max-width: 34.375em) {
+  h1 {
+    font-size: 2em;
+  }
+  .mar {
+    width: 80%;
+  }
+  textarea {
+    padding: 0.5em;
+    width: 90%;
+  }
+  article {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  article * {
+    width: 100%;
+  }
+  button {
+    margin-left: 0;
+    margin-top: 0.5em;
+  }
 }
 
 @font-face {
